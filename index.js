@@ -36,7 +36,7 @@ function max(rootNode) {
 
 function min(rootNode) {
   if (rootNode.left) {
-    return max(rootNode.left)
+    return min(rootNode.left)
   } else {
     return rootNode.data
   }
